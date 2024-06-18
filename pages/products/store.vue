@@ -40,8 +40,7 @@ const productData = ref({
   category: null,
 });
 
-import { useProductStore } from "~/stores/product";
-const productStore = useProductStore();
+
 </script>
 
 <style  scoped>
