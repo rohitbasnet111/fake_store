@@ -1,4 +1,5 @@
 <template>
+  <carousel/>
   <div>
     <h1>Products</h1>
 
@@ -28,7 +29,7 @@
               <td>{{ product.price }}</td>
               <td>{{ product.category }}</td>
               <td>
-                <nuxt-link class="px-2">
+                <nuxt-link class="px-2" :to="`/products/${id}`">
                   <v-icon>mdi-pencil</v-icon>
                 </nuxt-link>
 

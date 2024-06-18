@@ -3,6 +3,7 @@
         <header>
             <navbar/>
         </header>
+        
         <main>
             <slot></slot>
         </main>
