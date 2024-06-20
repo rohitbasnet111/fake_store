@@ -29,12 +29,12 @@
               <td>{{ product.price }}</td>
               <td>{{ product.category }}</td>
               <td>
-                <nuxt-link class="px-2" :to="`/products/${id}`">
+                <nuxt-link class="px-2" :to="`/products/${product.id}`">
                   <v-icon>mdi-pencil</v-icon>
                 </nuxt-link>
 
-                <nuxt-link>
-                  <v-icon>mdi-delete</v-icon>
+                <nuxt-link @click="productStore.deleteProduct(product.id)">
+                  <v-icon >mdi-delete</v-icon>
                 </nuxt-link>
               </td>
             </tr>
@@ -57,5 +57,10 @@ h1 {
   color: orangered;
   text-align: center;
   padding: 10px;
+}
+
+
+a{
+  color:orangered;
 }
 </style>
